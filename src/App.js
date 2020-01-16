@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'antd/dist/antd.css';
 // import FormLogin from './components/FormLogin';
 import FormNewUser from './components/FormNewUser';
 
