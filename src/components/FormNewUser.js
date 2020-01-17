@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
+import { Layout, Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
+import '../style/FormNewUser.css';
 
 class FormNewUser extends Component {
   state = {
@@ -8,33 +9,43 @@ class FormNewUser extends Component {
   
   render() {
     return (
-      <div>
-        <Row>
-          <Col span={12} xs={2} sm={4} md={6} lg={8} xl={10}>
+      <div className='container'>
+        <Row type='flex' justify='center'>
+          <Col span={9} className='img-backg img-block'>
             <h1>Hello World</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
           </Col>
 
-          <Col span={12} xs={2} sm={4} md={6} lg={8} xl={10}>
+          <Col span={9} className='form-block'>
             <h1>Register</h1>
-            <p>Don't have an account? <a href='https://www.google.com/'>Create your account</a>, it takes less than a minute.</p>
+            <p>Don't have an account? <a href='#'>Create your account</a>, it takes less than a minute.</p>
             
             <Form>
-            <Form.Item label='NAME'><Input /></Form.Item>
-
-              <input type='text' placeholder='NAME'></input>
-              <input type='text' placeholder='EMAIL ID'></input>
-              <input type='text' placeholder='PHONE'></input>
-              <input type='password' placeholder='PASSWORD'></input>
-              <input type='checkbox'></input><span>I accept <a href='https://www.google.com/'>terms and conditions</a> and <a href='https://www.google.com/'>privacy policy</a>.</span>
-              <Button type='submit'>Login</Button>
+              <Form.Item>
+                <Input placeholder='NAME' />
+              </Form.Item>
+              <Form.Item>
+                <Input placeholder='EMAIL ID' />
+              </Form.Item>
+              <Form.Item>
+                <Input placeholder='PHONE' />
+              </Form.Item>
+              <Form.Item>
+                <Input placeholder='PASSWORD' type='password' />
+              </Form.Item>
+              <Form.Item>
+                <Checkbox>I accept <a href='#'>terms and conditions</a> and <a href='#'>privacy policy</a>.</Checkbox>
+              </Form.Item>
+              <Form.Item>
+                <Button type='primary' htmlType='submit'>Login</Button>
+              </Form.Item>
             </Form>
 
             <div>
-              <h5>Login with social media</h5>
-              <button type='button'>Facebook</button>
-              <button type='button'>Twitter</button>
-              <button type='button'>Google +</button>
+              <p>Login with social media</p>
+              <Button type='button'>Facebook</Button>
+              <Button type='button'>Twitter</Button>
+              <Button type='button'>Google +</Button>
             </div>
           </Col>
         </Row>
