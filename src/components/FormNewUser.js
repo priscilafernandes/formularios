@@ -21,31 +21,21 @@ class FormNewUser extends Component {
             <p>Don't have an account? <a href='#'>Create your account</a>, it takes less than a minute.</p>
             
             <Form>
-              <Form.Item>
-                <Input placeholder='NAME' />
-              </Form.Item>
-              <Form.Item>
-                <Input placeholder='EMAIL ID' />
-              </Form.Item>
-              <Form.Item>
-                <Input placeholder='PHONE' />
-              </Form.Item>
-              <Form.Item>
-                <Input placeholder='PASSWORD' type='password' />
-              </Form.Item>
+              <Form.Item label='NAME'><Input /></Form.Item>
+              <Form.Item label='EMAIL ID'><Input type='email' /></Form.Item>
+              <Form.Item label='PHONE'><Input /></Form.Item>
+              <Form.Item label='PASSWORD'><Input type='password' /></Form.Item>
               <Form.Item>
                 <Checkbox>I accept <a href='#'>terms and conditions</a> and <a href='#'>privacy policy</a>.</Checkbox>
               </Form.Item>
-              <Form.Item>
-                <Button type='primary' htmlType='submit'>Login</Button>
-              </Form.Item>
+              <Form.Item><Button type='primary' htmlType='submit'>Login</Button></Form.Item>
             </Form>
 
             <div>
               <p>Login with social media</p>
-              <Button type='button'>Facebook</Button>
-              <Button type='button'>Twitter</Button>
-              <Button type='button'>Google +</Button>
+              <Button type='button'><Icon type="facebook" theme="filled" />Facebook</Button>
+              <Button type='button'><Icon type="twitter-square" theme="filled" />Twitter</Button>
+              <Button type='button'><Icon type="google-plus-square" theme="filled" />Google +</Button>
             </div>
           </Col>
         </Row>
