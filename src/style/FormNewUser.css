@@ -1,22 +1,70 @@
 .container {
-  height: 100vh;
-  background-color: #797979;
+  padding: 5em;
+  background-color: rgb(211, 82, 59);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1;
+  color: #fff;
 }
 
 .img-backg {
   background-image: url('../assets/plant.jpg');
   background-position: center;
   background-size: cover;
-  
 }
 
 .img-block {
   padding: 5em;
   border-radius: 10px 0 0 10px;
+  color: #fff;
 }
 
 .form-block {
   padding: 5em;
   border-radius: 0 10px 10px 0;
-  background-color: #bfbfbf;
+  background-color: #fff;
+}
+
+.checkbox {
+  border-radius: 20px;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+.btn-login {
+  width: 40%;
+  border-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(255, 0, 55);
+}
+
+.btn-login:hover {
+
+}
+
+.btn-social {
+  width: 30%;
+  font-size: 0.85em;
+  border-style: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.google {
+  background-color: #dd4b39;
 }
