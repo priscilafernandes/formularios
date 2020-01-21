@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import { Layout, Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
 import '../style/FormNewUser.css';
 
-class FormNewUser extends Component {
-  state = {
-
-  }
-  
+class FormNewUser extends Component {  
   render() {
     return (
       <Row className='container'>
@@ -20,14 +16,29 @@ class FormNewUser extends Component {
             <h1 className='subtitle'>Register</h1>
             <p>Don't have an account? <a href='#'>Create your account</a>, it takes less than a minute.</p>
             
-            <Form>
-              <Form.Item label='NAME'><Input /></Form.Item>
-              <Form.Item label='EMAIL ID'><Input type='email' /></Form.Item>
-              <Form.Item label='PHONE'><Input /></Form.Item>
-              <Form.Item label='PASSWORD'><Input type='password' /></Form.Item>
-              <Form.Item>
-                <Checkbox className='checkbox'>I accept <a href='#'>terms and conditions</a> and <a href='#'>privacy policy</a>.</Checkbox>
+            <Form layout='horizontal' className='form'>
+              <Form.Item label='NAME' className='label'>
+                <Input className='form-item-input' />
               </Form.Item>
+
+              <Form.Item label='EMAIL ID' className='label'>
+                <Input type='email' className='form-item-input' />
+              </Form.Item>
+
+              <Form.Item label='PHONE' className='label'>
+                <Input className='form-item-input' />
+              </Form.Item>
+
+              <Form.Item label='PASSWORD' className='label'>
+                <Input type='password' className='form-item-input' />
+              </Form.Item>
+              
+              <Form.Item>
+                <Checkbox className='checkbox'>
+                  I accept <a href='#'>terms and conditions</a> and <a href='#'>privacy policy</a>.
+                </Checkbox>
+              </Form.Item>
+
               <Form.Item>
                 <Row type='flex' justify='end'>
                   <Button type='primary' htmlType='submit' className='btn-login'>LOGIN</Button>
@@ -40,9 +51,11 @@ class FormNewUser extends Component {
               <Button type='button' className='btn-social facebook'>
                 <Icon type='facebook' theme='filled' />Facebook
               </Button>
+
               <Button type='button' className='btn-social twitter'>
                 <Icon type='twitter-square' theme='filled' />Twitter
               </Button>
+
               <Button type='button' className='btn-social google'>
                 <Icon type='google-plus-square' theme='filled' />Google +
               </Button>
