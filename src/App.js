@@ -1,13 +1,17 @@
 import React from 'react';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import '../src/style/scss/App.scss';
 import 'antd/dist/antd.css';
-// import FormLogin from './components/FormLogin';
+import FormLogin from './components/FormLogin';
 import FormNewUser from './components/FormNewUser';
 
 function App() {
   return (
     <div className="App">
-      <FormNewUser /> 
+      <Switch>
+        <Route path='/' exact={true} component={ FormNewUser } />
+        <Route path='/login'exact={true} component={ FormLogin } />
+      </Switch>
     </div>
   );
 }

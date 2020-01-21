@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
+import { Form, Input, Icon, Row, Col, Checkbox, Button } from 'antd';
 import '../style/scss/FormNewUser.scss';
 
 class FormNewUser extends Component {  
@@ -39,11 +39,9 @@ class FormNewUser extends Component {
                 </Checkbox>
               </Form.Item>
 
-              <Form.Item>
-                <Row type='flex' justify='end'>
-                  <Button type='primary' htmlType='submit' className='btn-login'>LOGIN</Button>
-                </Row>
-              </Form.Item>
+              <Row type='flex' justify='end'>
+                <Button type='primary' htmlType='submit' className='btn-login'>LOGIN</Button>
+              </Row>
             </Form>
 
             <p>Login with social media</p>
