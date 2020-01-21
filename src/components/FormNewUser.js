@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
-import '../style/FormNewUser.css';
+import '../style/scss/FormNewUser.scss';
 
 class FormNewUser extends Component {  
   render() {

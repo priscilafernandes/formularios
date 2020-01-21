@@ -1,0 +1,70 @@
+@import './Variables.scss';
+
+.container {
+  padding: $padding;
+  background-image: linear-gradient(-90deg, $second-color, $third-color);
+}
+
+.title {
+  font-weight: $font-strong;
+  font-size: 5em;
+  line-height: 1;
+  color: $second-color-font;
+}
+
+.img-backg {
+  background-image: url('../../assets/plant.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.img-block {
+  padding: $padding;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+}
+
+.form-block {
+  padding: $padding;
+  border-radius: 0 10px 10px 0;
+  background-color: #fff;
+}
+
+.form-item-input {
+  border-style: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.subtitle {
+  font-weight: $font-strong;
+}
+
+.btn-login {
+  width: 40%;
+  border-style: none;
+  border-radius: $btn-radius;
+  font-weight: $font-strong;
+  color: $second-color-font;
+  background-color: $primary-color;
+}
+
+.btn-social {
+  width: 30%;
+  font-size: 0.85em;
+  border-style: none;
+  border-radius: $btn-radius;
+  color: $second-color-font;
+}
+
+.facebook {
+  background-color: $facebook;
+}
+
+.twitter {
+  background-color: $twitter;
+}
+
+.google {
+  background-color: $google;
+}
