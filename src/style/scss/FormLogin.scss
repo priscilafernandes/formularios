@@ -1,0 +1,12 @@
+@import './global.scss';
+
+.img-block-login {
+  @include img-block-base;
+  border-radius: 10px;
+}
+
+.form-block-login {
+  @include form-block-base;
+  border-radius: 10px;
+  width: 80%;
+}

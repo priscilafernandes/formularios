@@ -7,7 +7,7 @@ import FormNewUser from './components/FormNewUser';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Switch>
         <Route path='/' exact={true} component={ FormNewUser } />
         <Route path='/login'exact={true} component={ FormLogin } />
