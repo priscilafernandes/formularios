@@ -37,6 +37,12 @@
   font-weight: $font-strong;
   color: $second-color-font;
   background-color: $primary-color;
+
+  &:hover {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    background-color: #fff;
+  }
 }
 
 .btn-social {
@@ -49,12 +55,35 @@
 
 .facebook {
   background-color: $facebook;
+
+  &:hover {
+    color: $facebook;
+    border: 1px solid $facebook;
+  }
 }
 
 .twitter {
   background-color: $twitter;
+  
+  &:hover {
+    color: $twitter;
+    border: 1px solid $twitter;
+  }
 }
 
 .google {
   background-color: $google;
+
+  &:hover {
+    color: $google;
+    border: 1px solid $google;
+  }
+}
+
+.link-btn {
+  color: $second-color-font;
+}
+
+.container-vh {
+  height: 100vh;
 }

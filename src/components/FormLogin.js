@@ -9,8 +9,8 @@ class FormLogin extends Component {
     return (
       <Row type='flex' justify='center'>
         <Col className='img-backg img-block-login'>
-
           <Row type='flex' justify='center'>
+            
             <Col className='form-block-login'> 
               <h1 className='subtitle'>Login</h1>
               <p className='account-text'>Don't have an account? <Link to='/'>Create your account</Link>, it takes less than a minute.</p>

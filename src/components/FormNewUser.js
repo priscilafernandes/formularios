@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Input, Row, Col, Checkbox, Button } from 'antd';
+import { Link } from 'react-router-dom';
 import '../style/scss/FormNewUser.scss';
-
 import SocialMedia from './SocialMedia';
 
 class FormNewUser extends Component {  
@@ -15,11 +15,11 @@ class FormNewUser extends Component {
 
         <Col span={10} className='form-block-new'>
           <h1 className='subtitle'>Register</h1>
-          <p className='account-text'>Don't have an account? <a href='https://google.com'>Create your account</a>, it takes less than a minute.</p>
+          <p className='account-text'>Already have an account? <Link to='/login'>Click here</Link>.</p>
           
           <Form layout='horizontal' className='form'>
             <Form.Item label='NAME' className='label'>
-              <Input className='form-item-input' />
+              <Input type='text' className='form-item-input' />
             </Form.Item>
 
             <Form.Item label='EMAIL ID' className='label'>
@@ -27,7 +27,7 @@ class FormNewUser extends Component {
             </Form.Item>
 
             <Form.Item label='PHONE' className='label'>
-              <Input className='form-item-input' />
+              <Input type='text' className='form-item-input' />
             </Form.Item>
 
             <Form.Item label='PASSWORD' className='label'>
@@ -36,7 +36,7 @@ class FormNewUser extends Component {
             
             <Form.Item>
               <Checkbox className='checkbox'>
-                I accept <a href='https://google.com'>terms and conditions</a> and <a href='https://google.com'>privacy policy</a>.
+                I accept <Link to='/'>terms and conditions</Link> and <Link to='/'>privacy policy</Link>.
               </Checkbox>
             </Form.Item>
 

@@ -4,7 +4,7 @@ import { Icon, Row, Button } from 'antd';
 class SocialMedia extends Component {
   render() {
     return (
-      <>
+      <Row>
       <p>Login with social media</p>
         <Row type='flex' justify='space-between'>
           <Button type='button' className='btn-social facebook'>
@@ -19,7 +19,7 @@ class SocialMedia extends Component {
             <Icon type='google-plus-square' theme='filled' />Google +
           </Button>
         </Row>
-      </>
+      </Row>
     );
   }
 }
