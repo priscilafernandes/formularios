@@ -16,17 +16,28 @@
   background-color: #fff;
 }
 
+.form {
+  margin-top: $margin;
+}
+
+.label {
+  border-bottom: 1px solid $border-color;
+  width: $justify;
+  margin-top: $short-margin;
+}
+
 .form-item-input {
   border-style: none;
   border-radius: 0;
-  border-bottom: 1px solid #d9d9d9;
+  width: $justify;
+  // border-bottom: 1px solid $border-color;
 }
 
 .subtitle {
   font-weight: $font-strong;
 }
 
-.account-text {
+.paragraph-text {
   color: $primary-color-font;
 }
 
@@ -37,46 +48,12 @@
   font-weight: $font-strong;
   color: $second-color-font;
   background-color: $primary-color;
+  margin-top: $margin;
 
   &:hover {
     color: $primary-color;
     border: 1px solid $primary-color;
     background-color: #fff;
-  }
-}
-
-.btn-social {
-  width: 30%;
-  font-size: 0.85em;
-  border-style: none;
-  border-radius: $btn-radius;
-  color: $second-color-font;
-}
-
-.facebook {
-  background-color: $facebook;
-
-  &:hover {
-    color: $facebook;
-    border: 1px solid $facebook;
-  }
-}
-
-.twitter {
-  background-color: $twitter;
-  
-  &:hover {
-    color: $twitter;
-    border: 1px solid $twitter;
-  }
-}
-
-.google {
-  background-color: $google;
-
-  &:hover {
-    color: $google;
-    border: 1px solid $google;
   }
 }
 

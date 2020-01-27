@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+.margin {
+  margin-top: $margin;
+}
+
+.btn-social {
+  width: 30%;
+  font-size: 0.85em;
+  border-style: none;
+  border-radius: $btn-radius;
+  color: $second-color-font;
+}
+
+.facebook {
+  background-color: $facebook;
+
+  &:hover {
+    color: $facebook;
+    border: 1px solid $facebook;
+  }
+}
+
+.twitter {
+  background-color: $twitter;
+  
+  &:hover {
+    color: $twitter;
+    border: 1px solid $twitter;
+  }
+}
+
+.google {
+  background-color: $google;
+
+  &:hover {
+    color: $google;
+    border: 1px solid $google;
+  }
+}

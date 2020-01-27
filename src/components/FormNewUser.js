@@ -15,9 +15,9 @@ class FormNewUser extends Component {
 
         <Col span={10} className='form-block-new'>
           <h1 className='subtitle'>Register</h1>
-          <p className='account-text'>Already have an account? <Link to='/login'>Click here</Link>.</p>
+          <p className='paragraph-text'>Already have an account? <Link to='/login'>Click here</Link>.</p>
           
-          <Form layout='horizontal' className='form'>
+          <Form layout='inline' className='form'>
             <Form.Item label='NAME' className='label'>
               <Input type='text' className='form-item-input' />
             </Form.Item>

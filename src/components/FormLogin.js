@@ -13,9 +13,9 @@ class FormLogin extends Component {
             
             <Col className='form-block-login'> 
               <h1 className='subtitle'>Login</h1>
-              <p className='account-text'>Don't have an account? <Link to='/'>Create your account</Link>, it takes less than a minute.</p>
+              <p className='paragraph-text'>Don't have an account? <Link to='/'>Create your account</Link>, it takes less than a minute.</p>
               
-              <Form layout='horizontal' className='form'>
+              <Form layout='inline' className='form'>
                 <Form.Item label='EMAIL' className='label'>
                   <Input type='email' className='form-item-input' />
                 </Form.Item>
