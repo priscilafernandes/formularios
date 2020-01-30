@@ -2,6 +2,7 @@
 
 .container {
   font-family: 'Roboto', sans-serif;
-  padding: 5em;
   background-image: linear-gradient(-90deg, $second-color, $third-color);
+  padding: 5em 0 5em 0;
+  height: 100vh;
 }

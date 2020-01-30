@@ -70,8 +70,8 @@
   }
 }
 
-@media (max-width: $breakpoint-small) {
-  .btn-login {
-    
+@media (max-width: $breakpoint-medium) {
+  .img-backg {
+    display: none;
   }
 }

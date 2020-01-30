@@ -20,3 +20,10 @@
 .checkbox {
   margin-top: $short-margin;
 }
+
+@media (max-width: $breakpoint-medium) {
+  .form-block-new {
+    border-radius: 10px;
+    width: 80%;
+  }
+}
