@@ -38,3 +38,24 @@
     border: 1px solid $google;
   }
 }
+
+@media (max-width: $breakpoint-large) {
+  .container-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-social {
+    width: 100%;
+  }
+
+  .twitter {
+    margin: 1em 0 1em 0;
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  #btn-social-text {
+    display: none;
+  }
+}
