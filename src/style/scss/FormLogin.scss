@@ -1,5 +1,11 @@
 @import './global.scss';
 
+.img-backg-login {
+  background-image: url('../../assets/plant.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 .img-block-login {
   @include img-block-base;
   border-radius: 10px;

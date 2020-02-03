@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Form, Input, Row, Col, Checkbox, Button } from 'antd';
 import { Link } from 'react-router-dom';
-import '../style/scss/FormNewUser.scss';
+import '../style/scss/FormRegister.scss';
 import SocialMedia from './SocialMedia';
 
-class FormNewUser extends Component {  
+class FormRegister extends Component {  
   render() {
     return (
-      <Row type='flex' justify='center'>
-        <Col span={10} className='img-backg img-block-new'>
+      <Row type='flex' justify='center' className='container'>
+        <Col span={10} className='img-backg img-block-register'>
           <h1 className='title'>Hello<br/>World.</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Aenean euismod bibendum laoreet.</p>
         </Col>
 
-        <Col span={10} className='form-block-new'>
+        <Col span={10} className='form-block-register'>
           <h1 className='subtitle'>Register</h1>
           <p className='paragraph-text'>Already have an account? <Link to='/login'>Click here</Link>.</p>
           
@@ -52,4 +52,4 @@ class FormNewUser extends Component {
   }
 }
 
-export default FormNewUser;
+export default FormRegister;

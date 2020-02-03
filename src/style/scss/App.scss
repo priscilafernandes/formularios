@@ -1,8 +1,13 @@
 @import './global.scss';
 
-.container {
+.container-app {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(-90deg, $second-color, $third-color);
   padding: 5em 0 5em 0;
-  height: 100vh;
+}
+
+@media (min-width: $breakpoint-big) {
+  .container-app {
+    height: calc(100vw * (9/16));
+  }
 }

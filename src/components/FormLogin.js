@@ -7,8 +7,8 @@ import SocialMedia from './SocialMedia';
 class FormLogin extends Component {  
   render() {
     return (
-      <Row type='flex' justify='center'>
-        <Col className='img-backg img-block-login'>
+      <Row type='flex' justify='center' className='container'>
+        <Col className='img-backg-login img-block-login'>
           <Row type='flex' justify='center'>
             
             <Col className='form-block-login'> 

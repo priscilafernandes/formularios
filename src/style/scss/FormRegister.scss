@@ -7,12 +7,12 @@
   color: $second-color-font;
 }
 
-.img-block-new {
+.img-block-register {
   @include img-block-base;
   border-radius: 10px 0 0 10px;
 }
 
-.form-block-new {
+.form-block-register {
   @include form-block-base;
   border-radius: 0 10px 10px 0;
 }
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: $breakpoint-medium) {
-  .form-block-new {
+  .form-block-register {
     border-radius: 10px;
     width: 80%;
   }
