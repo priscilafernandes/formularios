@@ -43,7 +43,7 @@ class FormRegister extends Component {
             <Row type='flex' justify='end'>
               <Button type='primary' htmlType='submit' className='btn-login'>LOGIN</Button>
             </Row>
-          </Form>
+          </Form>          
           
           <SocialMedia />
         </Col>
